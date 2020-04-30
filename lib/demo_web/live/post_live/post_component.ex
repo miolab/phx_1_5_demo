@@ -39,12 +39,12 @@ defmodule DemoWeb.PostLive.PostComponent do
   end
 
   def handle_event("like", _, socket) do
-    Chirp.Timeline.inc_likes(socket.assigns.post)
+    Demo.Timeline.inc_likes(socket.assigns.post)
     {:noreply, socket}
   end
 
   def handle_event("repost", _, socket) do
-    Chirp.Timeline.inc_reposts(socket.assigns.post)
+    Demo.Timeline.inc_reposts(socket.assigns.post)
     {:noreply, socket}
   end
 end
