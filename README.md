@@ -1,3 +1,7 @@
+# Phoenix Local Playground (no-ecto)
+
+ローカル直入れPhoenix開発検証用リポジトリ（no-ecto版）
+
 # Demo
 
 To start your Phoenix server:
