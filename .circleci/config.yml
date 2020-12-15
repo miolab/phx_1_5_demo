@@ -8,6 +8,31 @@ jobs:
       - checkout
 
       - run:
+          name: Erlang install
+          command: |
+            set -x
+            wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb
+            dpkg -i erlang-solutions_2.0_all.deb
+            apt-get update && apt-get install -y esl-erlang
+            rm erlang-solutions_2.0_all.deb
+            which erl
+
+      - run:
+          name: Elixir install
+          command: |
+            set -x
+            apt-get update && apt-get install elixir
+            which elixir
+            mix --version && which mix
+
+      - run:
+          name: Mix and Rebar install
+          command: |
+            set -x
+            mix local.hex --force
+            mix local.rebar --force
+
+      - run:
           name: Mix deps.get
           command: |
             set -x
