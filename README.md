@@ -1,6 +1,6 @@
 # Phoenix Local Playground (no-ecto)
 
-[![miolab](https://github.com/miolab/phoenix_local_playground_no_ecto.svg?style=svg)](https://github.com/miolab/phoenix_local_playground_no_ecto)
+[![miolab](https://circleci.com/gh/miolab/phoenix_local_playground_no_ecto.svg?style=svg)](https://github.com/miolab/phoenix_local_playground_no_ecto)
 
 ローカル直入れPhoenix開発検証用リポジトリ（no-ecto版）
 
