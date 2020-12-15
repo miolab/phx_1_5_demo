@@ -21,12 +21,6 @@ jobs:
             bash -c "mix deps.get && mix deps.compile"
 
       - run:
-          name: Npm install in assets directory
-          command: |
-            set -x
-            bash -c "cd assets && ls && npm install && node node_modules/webpack/bin/webpack.js --mode development"
-
-      - run:
           name: Mix format
           command: |
             set -x
