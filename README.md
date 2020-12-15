@@ -1,5 +1,7 @@
 # Phoenix Local Playground (no-ecto)
 
+[![miolab](https://github.com/miolab/phoenix_local_playground_no_ecto.svg?style=svg)](https://github.com/miolab/phoenix_local_playground_no_ecto)
+
 ローカル直入れPhoenix開発検証用リポジトリ（no-ecto版）
 
 ## バージョン
@@ -21,11 +23,3 @@ To start your Phoenix server:
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
