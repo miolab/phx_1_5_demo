@@ -1,29 +1,11 @@
 version: 2.1
 jobs:
   build:
-    machine:
-      image: ubuntu-1604:202010-01
+    docker:
+      - image: circleci/elixir:1.11.2
 
     steps:
       - checkout
-
-      - run:
-          name: Erlang install
-          command: |
-            set -x
-            wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb
-            dpkg -i erlang-solutions_2.0_all.deb
-            apt-get update && apt-get install -y esl-erlang
-            rm erlang-solutions_2.0_all.deb
-            which erl
-
-      - run:
-          name: Elixir install
-          command: |
-            set -x
-            apt-get update && apt-get install elixir
-            which elixir
-            mix --version && which mix
 
       - run:
           name: Mix and Rebar install
