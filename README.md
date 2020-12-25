@@ -6,20 +6,12 @@
 
 ## バージョン
 
-- Elixir 1.11.0 (compiled with Erlang/OTP 22)
-- phx_new-1.5.6
-- node v12.16.1
+- Elixir 1.11.2 (compiled with Erlang/OTP 22)
 
----
+  - Erlang 22.3.4.9
 
-# SampleApp
+  - phx_new-1.5.6
 
-To start your Phoenix server:
+- node v14.15.3
 
-  * Install dependencies with `mix deps.get`
-  * Install Node.js dependencies with `npm install` inside the `assets` directory
-  * Start Phoenix endpoint with `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+  - npm 6.14.9
