@@ -11,12 +11,12 @@ secret_key_base =
     You can generate one by calling: mix phx.gen.secret
     """
 
-config :sample_app, SampleAppWeb.Endpoint,
-  http: [
-    port: String.to_integer(System.get_env("PORT") || "4000"),
-    transport_options: [socket_opts: [:inet6]]
-  ],
-  secret_key_base: secret_key_base
+# config :sample_app, SampleAppWeb.Endpoint,
+#   http: [
+#     port: String.to_integer(System.get_env("PORT") || "4000"),
+#     transport_options: [socket_opts: [:inet6]]
+#   ],
+#   secret_key_base: secret_key_base
 
 # ## Using releases (Elixir v1.9+)
 #
