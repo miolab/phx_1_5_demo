@@ -1,6 +1,9 @@
 <section class="phx-hero">
   <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
   <p>by im</p>
+  <p>
+    <img src="<%= Routes.static_path(@conn, "/images/im.jpg") %>" alt="im image" width="100">
+  </p>
 </section>
 
 <section class="row">
