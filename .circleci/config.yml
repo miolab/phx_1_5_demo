@@ -61,11 +61,5 @@ jobs:
     executor: heroku/default
     steps:
       - checkout
-      - run:
-          command: >
-            echo "Login Heroku"
       - heroku/install
-      - run:
-          command: >
-            echo "Deploy to Heroku master"
       - heroku/deploy-via-git
