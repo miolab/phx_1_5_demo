@@ -14,4 +14,11 @@
 
 - node v14.15.3
 
-  - npm 6.14.9
+  - npm 6.14.10
+
+### 参考
+
+Circle CI Image
+- https://circleci.com/docs/ja/2.0/circleci-images/
+  - https://circleci.com/docs/ja/2.0/docker-image-tags.json
+  - https://nodejs.org/dist/v14.15.3/

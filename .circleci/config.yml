@@ -14,7 +14,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/elixir:1.11.2
+      - image: circleci/elixir:1.11.2-node
     steps:
       - checkout
       - run:
@@ -29,6 +29,18 @@ jobs:
             set -x
             bash -c "mix deps.get && mix deps.compile"
       - run:
+          name: Set specific Node version
+          command: |
+            set -x
+            curl -sSL "https://nodejs.org/dist/v14.15.3/node-v14.15.3-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v14.15.3-linux-x64/bin/node
+            curl https://www.npmjs.com/install.sh | sudo bash
+            node -v && npm -v
+      - run:
+          name: Npm install in assets directory
+          command: |
+            set -x
+            bash -c "cd assets && npm i"
+      - run:
           name: Mix format
           command: |
             set -x
@@ -39,10 +51,10 @@ jobs:
             set -x
             bash -c "mix test"
       - run:
-          name: Finish pipeline
+          name: Finish CI pipeline
           command: |
             set -x
-            echo "Finish pipeline"
+            echo "Finish CI pipeline"
   deploy:
     docker:
       - image: buildpack-deps:trusty
