@@ -22,3 +22,12 @@ Circle CI Image
 - https://circleci.com/docs/ja/2.0/circleci-images/
   - https://circleci.com/docs/ja/2.0/docker-image-tags.json
   - https://nodejs.org/dist/v14.15.3/
+
+Orb (heroku)
+- https://circleci.com/developer/orbs/orb/circleci/heroku
+- https://circleci.com/docs/ja/2.0/deployment-integrations/#heroku-orb-%E3%81%AE%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB
+
+git_hooks
+- https://hex.pm/packages/git_hooks
+  - Hex docs https://hexdocs.pm/git_hooks/readme.html
+  - GitHub https://github.com/qgadrian/elixir_git_hooks
