@@ -29,6 +29,11 @@ jobs:
             set -x
             bash -c "mix deps.get && mix deps.compile"
       - run:
+          name: Npm install in assets directory
+          command: |
+            set -x
+            bash -c "cd assets && npm i"
+      - run:
           name: Mix format
           command: |
             set -x
@@ -39,10 +44,10 @@ jobs:
             set -x
             bash -c "mix test"
       - run:
-          name: Finish pipeline
+          name: Finish CI pipeline
           command: |
             set -x
-            echo "Finish pipeline"
+            echo "Finish CI pipeline"
   deploy:
     docker:
       - image: buildpack-deps:trusty
