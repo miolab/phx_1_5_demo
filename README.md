@@ -10,7 +10,7 @@
 
   - Erlang 22.3.4.9
 
-  - phx_new-1.5.6
+  - Phoenix 1.5.7
 
 - node v14.15.3
 
