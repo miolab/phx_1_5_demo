@@ -28,7 +28,6 @@ config :phoenix, :json_library, Jason
 import_config "#{Mix.env()}.exs"
 
 # Set git_hooks
-if Mix.env() != :prod do
   config :git_hooks,
     auto_install: true,
     verbose: true,
@@ -45,4 +44,3 @@ if Mix.env() != :prod do
         ]
       ]
     ]
-end
