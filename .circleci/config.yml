@@ -29,11 +29,15 @@ jobs:
             set -x
             bash -c "mix deps.get && mix deps.compile"
       - run:
-          name: Npm install in assets directory
+          name: Set specific Node version
           command: |
             set -x
             curl -sSL "https://nodejs.org/dist/v14.15.3/node-v14.15.3-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v14.15.3-linux-x64/bin/node
             curl https://www.npmjs.com/install.sh | sudo bash
+      - run:
+          name: Npm install in assets directory
+          command: |
+            set -x
             node -v && npm -v
             bash -c "cd assets && npm i"
       - run:
