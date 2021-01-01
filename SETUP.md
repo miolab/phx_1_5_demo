@@ -68,6 +68,14 @@ You can also run your app inside IEx (Interactive Elixir) as:
 
 ```
 
+```bash
+$ mix deps.get && mix deps.compile
+```
+
+```bash
+$ cd assets && npm install && node node_modules/webpack/bin/webpack.js --mode development
+```
+
 ## run
 
 ```bash
