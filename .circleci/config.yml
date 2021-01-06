@@ -16,7 +16,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/elixir:1.11.2-node
+      - image: circleci/elixir:1.11.3-node
     steps:
       - checkout
       - run:
