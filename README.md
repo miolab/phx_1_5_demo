@@ -12,9 +12,11 @@
 
   - Phoenix 1.5.7
 
-- node v14.15.3
+- node v14.15.4
 
   - npm 6.14.10
+
+- TailwindCSS 2.0.2
 
 ## 確認URL
 
