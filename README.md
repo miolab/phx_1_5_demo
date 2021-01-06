@@ -6,7 +6,7 @@
 
 ## バージョン
 
-- Elixir 1.11.2 (compiled with Erlang/OTP 22)
+- Elixir 1.11.3 (compiled with Erlang/OTP 22)
 
   - Erlang 22.3.4.9
 
