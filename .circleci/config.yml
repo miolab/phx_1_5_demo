@@ -6,9 +6,9 @@ workflows:
       - deploy:
           requires:
             - build
-          filters:
-            branches:
-              only: master
+          # filters:
+          #   branches:
+          #     only: master
 
 version: 2.1
 orbs:
@@ -26,7 +26,7 @@ jobs:
             mix local.hex --force
             mix local.rebar --force
       - run:
-          name: Mix deps.get
+          name: Mix deps.get & compile
           command: |
             set -x
             bash -c "mix deps.get && mix deps.compile"
@@ -62,4 +62,9 @@ jobs:
     steps:
       - checkout
       - heroku/install
+      - run:
+          name: Heroku login
+          command: |
+            set -x
+            heroku login
       - heroku/deploy-via-git
