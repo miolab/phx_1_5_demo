@@ -12,7 +12,7 @@ workflows:
 
 version: 2.1
 orbs:
-  heroku: circleci/heroku@1.2.3
+  heroku: circleci/heroku@1.2.4
 jobs:
   build:
     docker:
