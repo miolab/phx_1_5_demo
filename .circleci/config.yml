@@ -26,7 +26,7 @@ jobs:
             mix local.hex --force
             mix local.rebar --force
       - run:
-          name: Mix deps.get
+          name: Mix deps.get & compile
           command: |
             set -x
             bash -c "mix deps.get && mix deps.compile"
@@ -62,4 +62,5 @@ jobs:
     steps:
       - checkout
       - heroku/install
+      - heroku/check-authentication
       - heroku/deploy-via-git
