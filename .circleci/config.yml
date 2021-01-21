@@ -6,9 +6,9 @@ workflows:
       - deploy:
           requires:
             - build
-          # filters:
-          #   branches:
-          #     only: master
+          filters:
+            branches:
+              only: master
 
 version: 2.1
 orbs:
@@ -63,9 +63,4 @@ jobs:
       - checkout
       - heroku/install
       - heroku/check-authentication
-      # - run:
-      #     name: Heroku login
-      #     command: |
-      #       set -x
-      #       heroku login
       - heroku/deploy-via-git
