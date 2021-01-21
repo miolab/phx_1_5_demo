@@ -63,9 +63,9 @@ jobs:
       - checkout
       - heroku/install
       - heroku/check-authentication
-      - run:
-          name: Heroku login
-          command: |
-            set -x
-            heroku login
+      # - run:
+      #     name: Heroku login
+      #     command: |
+      #       set -x
+      #       heroku login
       - heroku/deploy-via-git
