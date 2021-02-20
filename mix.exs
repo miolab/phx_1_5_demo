@@ -42,7 +42,8 @@ defmodule SampleApp.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:git_hooks, "~> 0.5.1", only: [:test, :dev]}
+      {:git_hooks, "~> 0.5.1", only: [:test, :dev]},
+      {:nx, "~> 0.1.0-dev", github: "elixir-nx/nx", sparse: "nx"}
     ]
   end
 
