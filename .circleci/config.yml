@@ -36,7 +36,7 @@ jobs:
           name: Set specific Node version
           command: |
             set -x
-            curl -sSL "https://nodejs.org/dist/v14.15.5/node-v14.15.5-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v14.15.5-linux-x64/bin/node
+            curl -sSL "https://nodejs.org/dist/v14.16.0/node-v14.16.0-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v14.16.0-linux-x64/bin/node
             curl https://www.npmjs.com/install.sh | sudo bash
             node -v && npm -v
       - run:
