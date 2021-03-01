@@ -16,7 +16,7 @@
 
   - Phoenix 1.5.7
 
-- node v14.15.5
+- node v14.16.0
 
 - TailwindCSS 2.0.2
 
